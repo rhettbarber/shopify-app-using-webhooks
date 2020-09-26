@@ -13,5 +13,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        "setting/create_webhook_product_create",
     ];
 }

@@ -12,6 +12,24 @@ class SettingController extends Controller
 
 
 
+    public function index()
+    {
+        $shop = Auth::user();
+        $webhooks = $shop->api()->rest('GET', '/admin/api/2020-07/webhooks.json');
+        $s = "s";
+        return ['message' => 'Theme setup succesfully'];
+
+    }
+    public function products_create()
+    {
+        $shop = Auth::user();
+        $webhooks = $shop->api()->rest('GET', '/admin/api/2020-07/webhooks.json');
+        $s = "s";
+        return ['message' => 'Theme setup succesfully'];
+
+    }
+
+
     public function configureTheme()
     {
         $shop = Auth::user();

@@ -9,6 +9,8 @@ return [
     | (Not yet complete) A verbose logged output of processes
     |
     */
+    'shopify_localtunnel_url' => env('SHOPIFY_LOCALTUNNEL_URL', ''),
+
     'debug' => (bool) env('SHOPIFY_DEBUG', false),
 
     /*
@@ -270,15 +272,30 @@ return [
     |
     */
 
+//    coming soon
+//    'address' => env('SHOPIFY_LOCALTUNNEL_URL', '') . '/webhook/products-create'
+
     'webhooks' => [
-        /*
-            [
-                'topic' => env('SHOPIFY_WEBHOOK_1_TOPIC', 'orders/create'),
-                'address' => env('SHOPIFY_WEBHOOK_1_ADDRESS', 'https://some-app.com/webhook/orders-create')
-            ],
-            ...
-        */
+        [
+            'topic' => 'products/create',
+            'address' => 'https://tasty-kangaroo-40.loca.lt/webhook/products-create'
+        ],
+        [
+            'topic' => 'products/update',
+            'address' => 'https://tasty-kangaroo-40.loca.lt/webhook/products-update'
+        ]
     ],
+
+
+//    'webhooks' => [
+//        /*
+//            [
+//                'topic' => env('SHOPIFY_WEBHOOK_1_TOPIC', 'orders/create'),
+//                'address' => env('SHOPIFY_WEBHOOK_1_ADDRESS', 'https://some-app.com/webhook/orders-create')
+//            ],
+//            ...
+//        */
+//    ],
 
     /*
     |--------------------------------------------------------------------------

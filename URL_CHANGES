@@ -1,0 +1,19 @@
+
+
+
+https://curly-fox-59.loca.lt
+
+https://tasty-kangaroo-40.loca.lt/
+
+https://tasty-kangaroo-40.loca.ltwebhook/products-create
+
+D:\windows_php_install\bitnami\apps\git\private-repo\shopify-app\config\shopify-app.php
+
+    'webhooks' => [
+        [
+            'topic' => 'products/create',
+            'address' => 'https://stupid-snail-15.loca.lt/webhook/products-create'
+        ]
+    ]
+
+
